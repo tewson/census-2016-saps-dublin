@@ -3,8 +3,8 @@
     <head>
         <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
         <link rel="stylesheet"
-              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-              integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+              integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
               crossorigin="anonymous">
         <link rel="stylesheet"
               href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css"
@@ -14,9 +14,36 @@
               href="style.css">
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
             <h1>Census 2016 - Dublin</h1>
-            <div id="map"></div>
+            <div class="row">
+                <div class="col-12 col-md-2 order-md-2">
+                    <h6>% same address</h6>
+                    <div class="legend">
+                        <div class="legend-color same-address-85"></div>
+                        <div class="legend-text">85% - 100%</div>
+                    </div>
+                    <div class="legend">
+                        <div class="legend-color same-address-70"></div>
+                        <div class="legend-text">70% - 85%</div>
+                    </div>
+                    <div class="legend">
+                        <div class="legend-color same-address-55"></div>
+                        <div class="legend-text">55% - 70%</div>
+                    </div>
+                    <div class="legend">
+                        <div class="legend-color same-address-40"></div>
+                        <div class="legend-text">40% - 55%</div>
+                    </div>
+                    <div class="legend">
+                        <div class="legend-color same-address"></div>
+                        <div class="legend-text">0% - 40%</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 order-md-1">
+                    <div id="map"></div>
+                </div>
+            </div>
         </div>
 
         <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"
