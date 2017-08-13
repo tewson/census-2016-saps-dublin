@@ -3,5 +3,23 @@ body {
 }
 
 #map {
-  height: 600px;
+  height: 550px;
 }
+
+.legend-color,
+.legend-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border: thin solid #555555;
+}
+
+.same-address-85 { background-color: #eff3ff; }
+.same-address-70 { background-color: #bdd7e7; }
+.same-address-55 { background-color: #6baed6; }
+.same-address-40 { background-color: #3182bd; }
+.same-address { background-color: #08519c; }
